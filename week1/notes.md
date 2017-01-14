@@ -38,3 +38,7 @@ for the second class will allow you to follow along and work on the class labs.
 if you are using a laptop with a windows OS I will be using the bash terminal in
 class and unix command-line commands. If you are not comfortable with working
 with the command-line already I would strongly recommend that you use cloud9.
+
+if you are using windows and would like to follow along you can use:  
+[babun](http://babun.github.io/) or  
+[cygwin](https://www.cygwin.com/)
