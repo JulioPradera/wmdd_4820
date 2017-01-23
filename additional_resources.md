@@ -20,3 +20,6 @@ more advanced topics like React and WebPack.
 ## command-line
 
 [enough command-line to be dangerous](https://www.learnenough.com/command-line-tutorial)
+
+look at 'command line' and 'text-fu' for some intro command line notes
+[linux journey](https://linuxjourney.com)
