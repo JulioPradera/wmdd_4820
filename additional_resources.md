@@ -16,6 +16,10 @@ more advanced topics like React and WebPack.
 
 [understanding ecmascript6](https://www.nostarch.com/ecmascript6)
 
+### linters
+
+[eslint](http://eslint.org/) there are plugins to use eslint in all of the major editors.
+
 ## git
 
 [try git](https://try.github.io/levels/1/challenges/1)  
@@ -27,3 +31,20 @@ more advanced topics like React and WebPack.
 
 look at 'command line' and 'text-fu' for some intro command-line notes
 [linux journey](https://linuxjourney.com)
+
+## other things that come up along the way
+
+### vim
+
+[vim](http://www.vim.org/)  
+vim tutorial:  
+[a byte of vim](https://www.gitbook.com/book/swaroopch/byte-of-vim/details) this
+covers vim version 7 and version 8 just came out, but the basics haven't
+changed. if you are just getting started I would recommend sticking with sublime
+text or atom for now, but vim is good to know if you think you will be mucking about
+on a server in the future.
+
+### data structures and algorithms
+
+this is a good book to get started with data structures and algorithms. 
+[grokking algorithms](https://www.manning.com/books/grokking-algorithms)
