@@ -43,14 +43,11 @@ variables, a and b and they stay in memory until the function is complete.
 the call stack for the code above would look a little like this:
 
 |code  | stack |
-----------------
+|------|-------|
 |one() | one   |
-----------------
 |two() | two   |
 |      | one   |
-----------------
 |      | one   |
-----------------
 
 ### scope
 
