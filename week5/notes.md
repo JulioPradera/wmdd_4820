@@ -35,19 +35,18 @@ variables, a and b and they stay in memory until the function is complete.
     }
 
     function two (b) {
+      three(3)
       console.log(b)
+    }
+
+    function three (c) {
+      console.log(c)
     }
 
     one(1)
 
-the call stack for the code above would look a little like this:
+![call stack diagram](callstack.png)
 
-|code  | stack |
-|------|-------|
-|one() | one   |
-|two() | two   |
-|      | one   |
-|      | one   |
 
 ### scope
 
