@@ -30,8 +30,8 @@ when you call `add(3, 4)` your computer creates space in memory for two new
 variables, a and b and they stay in memory until the function is complete.
 
     function one(a) {
-      console.log(a)
       two(2)
+      console.log(a)
     }
 
     function two (b) {
@@ -44,6 +44,10 @@ variables, a and b and they stay in memory until the function is complete.
     }
 
     one(1)
+
+for the code above consider the diagram below as a representation of the call
+stack as the code is executed. The green rectangle would represent function one,
+the blue rectangle function two and the pink rectangle function 3.
 
 ![call stack diagram](callstack.png)
 
@@ -63,24 +67,29 @@ variables, a and b and they stay in memory until the function is complete.
 > > *You Don't Know JS* Kyle Simpson
 
 the scope of a variable or function is where it is accessible within your code.  
-when you create a new function any parameters passed in, or variables create
+when you create a new function any parameters passed in, or variables created
 within a function body are local(only accessible) to that function. 
 A block inside a block has access to the variables created outside, or an inner block
-can access variables created in outer block. 
+can access variables created in the outer block, but the outer block cannot use  
+variables created in the inner block.
 
 as your programs get more complex you will see that this helps to prevent you
 from creating variables that accidentally overwrite other variables.
 
+another reason that scope exists is the call stack. Imagine how quickly a
+running program would eat up memory if every variable created stayed and was
+accessible everywhere in your code, it would be a digital mess.
+
 **important es6 note**  
-prior to es6 JavaScript was function scoped, only a function created a new
-scope. but `let` and `const` are block scoped (anything in {}) so if you are
+prior to es6 scope in JavaScript was function scope, only a function created a new
+scope. but `let` and `const` are block scoped (anything in '{}') so if you are
 reading an older tutorial watch out for this.
 
 
 ### recursion
 in simplest terms recursion is when a function calls itself. This sounds weird
 at first and recursion can be difficult to wrap your head around, but there are times when
-writing a recursive function is easier to understand than using loop.
+writing a recursive function is easier to understand than using a loop.
 
     function recur(n) {
       recur(n - 1)
@@ -97,18 +106,18 @@ structure that store data in a key value pair. That looks like this:
 
 an object is a little like an array, only instead of your data being stored at
 an index, it is attached to a key. in JavaScript this key is always a string,
-although you can write it out without quotes. `{pet: 'cat'}`and you can use
-numbers, but the they are implemented as strings, so this works too `{one: 'first', two: 'second'}`. also unlike an
+although you can write it out without quotes, `{pet: 'cat'}`. also unlike an
 array an objects data is not stored in order. so using the previous object as an
 example *one*, isn't really before *two*.
 
 creating an object is similar to creating an array, only you use `{}` instead of
-`[]`  
+`[]`
+
     let myObj = { name: 'Nathan', age: 36 }
 
 you have already seen how to call properties and methods in objects we have been
 using the dot notation since day one `console.log()` you use this same method to
-access data store in your own objects.
+access data stored in your own objects.
 
     console.log(myObj.name) // 'Nathan'
 
@@ -125,6 +134,10 @@ you can add a new key and value to an object like this:
 
     myObj.city = 'Vancouver'
 
+values can be updated in the same way, but by passing a different value.
+
+    myObj.city = 'Boston'
+
 you can remove an item from an object with the `delete` keyword
 
     delete myObj.city
@@ -136,10 +149,10 @@ is the first line of the official docs at nodejs.org. There is a new acronym in
 there and what do they mean by 'File I/O'? the fs module can do a lot more than
 reading and writing to files, have a look at the official docs linked below to
 see what it can do. for today we are just going to use it to read and write
-files. stored locally (on the same computer our script is being run on) I am
-also going to gloss over terms like asynchronous and callback function for now.
-Although I encourage you to spend sometime with google and do a little reading
-on both of those. They are both important parts of building web apps with
+files stored locally (on the same computer our script is being run on). also
+just for now, I am going to gloss over terms like asynchronous and callback 
+function. Although I encourage you to spend sometime with google and do a 
+little reading on both of those. They are both important parts of building web apps with
 NodeJS, but as this is an intro course I feel like they take us down the rabbit
 hole to more advanced topics. So today we are going to look at using the
 synchronous method of reading and writing files, and synchronous just means one
@@ -148,8 +161,8 @@ but what about that POSIX thing? POSIX is the *Portable Operating System
 Interface* in simplest terms(i write that a lot, i know) it is a series of
 standards to help ensure that all UNIX like systems (Linux, BSD, Mac...) can use
 the same shell and command-line tools. We are using Bash, and shell commands
-like `ls` in Ubuntu (a linux distro) but these all of the things we have looked
-at so far also work on a mac, and Bash is the default shell in MacOS.
+like `ls` in Ubuntu (a linux distro) but all of the things we have looked
+at so far also work on a mac and other linux distros.
 
 so lets read and write some files.
 
@@ -157,6 +170,13 @@ unlike methods and properties that we have used in our code so far the fs module
 has to be imported before we can use it, this can be done with *require*.
 
     const fs = require('fs')
+
+*update warning*  
+there is a new method for importing modules, `import fs from 'fs'` but as of
+writing this using the new import method requires using a transpiler like babel.
+
+[mdn docs on
+import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
 
 if you look at the docs on nodejs.org you will see that among the many things
 that can be done with fs, reading writing and appending to files are among them.
