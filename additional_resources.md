@@ -16,9 +16,7 @@ more advanced topics like React and WebPack.
 
 [understanding ecmascript6](https://www.nostarch.com/ecmascript6)
 
-### linters
-
-[eslint](http://eslint.org/) there are plugins to use eslint in all of the major editors.
+[babel](https://babeljs.io/)
 
 ## git
 
@@ -34,7 +32,15 @@ look at 'command line' and 'text-fu' for some intro command-line notes
 
 ## other things that come up along the way
 
+### linux
+
+[how linux works](https://www.nostarch.com/howlinuxworks2)  
+
+
 ### vim
+
+vim is the text editor that i use in class, a few students have asked about it
+so for the curious here are a few places to learn a little more about vim.
 
 [vim](http://www.vim.org/)  
 vim tutorial:  
