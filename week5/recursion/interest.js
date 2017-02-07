@@ -11,3 +11,4 @@ function withInterst (principal, months, interest = intRate()) {
 }
 
 console.log(withInterst(800, 12))
+

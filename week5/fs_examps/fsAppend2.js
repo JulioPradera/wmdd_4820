@@ -2,6 +2,8 @@ const fs = require('fs')
 
 // get a message from process argv and clean it up
 const message = process.argv.slice(2)
+// converting below could also be accomplished with .join()
+// const printStr = message.join(' ')
 const stringMsg = message.toString()
 const printStr = stringMsg.replace(/,/g, ' ')
 

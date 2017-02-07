@@ -8,6 +8,6 @@ let hobbies = ['exploring dungeons', 'playing video games', 'kissing princesses'
 
 person.interests = hobbies
 
-for (key in person) {
-  console.log(`${key}: ${person[key]}`)
+for (name in person) {
+  console.log(`${name}: ${person[name]}`)
 }

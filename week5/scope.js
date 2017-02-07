@@ -4,9 +4,8 @@ function wizardsOnly (a, b) {
     let d = c + a
     return d
   }
-  console.log(d)
   console.log(c, a, b)
+  console.log(d)
 }
 
 wizardsOnly(1, 2)
-

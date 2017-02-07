@@ -1,9 +1,4 @@
 this is a test
- this is some text 
-
-
-the date is: 2017 31 1
-  
-class is over
-the date is: 2017 31 1
+one two
+the date is: 2017 6 2
   

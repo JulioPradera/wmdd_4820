@@ -30,7 +30,7 @@ use recursion. you probably want to store your numbers in an array
 
 example:
 
-func(1, 6) // [3, 4, 5}
+func(1, 6) // [3, 4, 5]
 
 lab 3)
 
