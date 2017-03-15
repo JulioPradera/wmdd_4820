@@ -17,7 +17,7 @@ umbrella for the words rain, showers, drizzle... and possibly several others.
 the array.includes() method may help with this
 [mdn array includes](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
 
-you app should display a minimum of 3 possible images, you can do more.
+your app should display a minimum of 3 possible images, you can do more.
 
 you may need a second API to get longitude and latitude data from country city
 input, I have provided links to APIs that you can use for this purpose.
@@ -28,7 +28,7 @@ you don't have to use fetch, it is still relatively new and there are not many
 tutorials. That said I would recommend trying to use fetch, the examples
 provided should give you everything you need to complete the assignment.
 
-a few other tools you may want to look at:
+a few other tools you may want to look at:  
 [superagent](https://visionmedia.github.io/superagent/)  
 [axios](https://github.com/mzabriskie/axios)  
 or good ol' [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
