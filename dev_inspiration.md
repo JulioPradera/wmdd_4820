@@ -31,6 +31,10 @@ Brendan Eich is the creator of the JavaScript programming language
 ### mozilla hacks
 [hacks](https://hacks.mozilla.org/)
 
+### hackernoon
+"how hackers start their afternoons"
+[hackernoon](https://hackernoon.com)
+
 ## podcasts
 
 I will try to find a few good podcasts on JavaScript and web development

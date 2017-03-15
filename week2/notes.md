@@ -20,7 +20,7 @@ with the node version of C9, so you don't need to install it.
 [node](https://nodejs.org/en/) is a JavaScript engine, similar to those found in
 a browser, in fact node uses the V8 engine that the chrome browser uses. For
 the first few weeks of class we will be using node to run our JavaScript
-programs. You can run a program in with node by using `cd` to change into the
+programs. You can run a program with node by using `cd` to change into the
 directory where your JavaScript file is and run `node your_js_file.js`.
 
 ## types

@@ -24,7 +24,6 @@ div.addEventListener('click', (e) => {
   }
 })
 
-
 function storeAdd(item) {
   let key = ls.length
   ls.setItem(key, item)
