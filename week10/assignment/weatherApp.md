@@ -96,3 +96,10 @@ pack.
 please use svg or png files for your icons.  
 [the noun project](https://thenounproject.com/)  
 [flat icon](http://www.flaticon.com/)
+
+## Due Date
+
+I need to receive an email with links to github and netlify or surge by Sunday
+Morning (before noon) both classes. There will be no further extensions granted
+because I won't have time to get all of my marking done if I receive these any
+later. This due date is for both sections of the class.
