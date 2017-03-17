@@ -1,18 +1,10 @@
-<<<<<<< HEAD
 # rest and spread
-=======
-# destructuring rest and spread
->>>>>>> bc07fb8b17f4a64614698fbec1ea96d347f3512d
 
 in the location IQ example I used a rest parameter (...data) I haven't shown you
 this syntax in class before as it a little more advanced and also another
 relatively new feature of JavaScript. 
 
-<<<<<<< HEAD
 Understanding of rest parameters and spread operators will not be required to succeed in this class, the following resources are just for the
-=======
-Understanding of destructuring will not be required to succeed in this class, the following resources are just for the
->>>>>>> bc07fb8b17f4a64614698fbec1ea96d347f3512d
 curious, and as always you can ask me if you have any questions.
 
 [rest
