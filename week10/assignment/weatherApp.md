@@ -99,7 +99,8 @@ please use svg or png files for your icons.
 
 ## Due Date
 
-I need to receive an email with links to github and netlify or surge by Sunday
-Morning (before noon) both classes. There will be no further extensions granted
+I need to receive an email with links to github and netlify or surge by **Sunday
+April 2nd** (before noon). There will be no further extensions granted
 because I won't have time to get all of my marking done if I receive these any
-later. This due date is for both sections of the class.
+later.  
+This due date is for both sections of the class.
