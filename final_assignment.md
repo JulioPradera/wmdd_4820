@@ -14,6 +14,10 @@ If you wish to work in a group you need to get permission to do so.
 You may use third party libraries (other than jQuery) look for packages that are
 well documented and updated regularly.
 
+Your project should contain only a single HTML file(index.HTML) with very
+minimal HTML. The bulk of the work should be DOM manipulation done with
+JavaScript.
+
 **no jQuery**
 
 **no personal websites with a little JavaScript tacked on**
